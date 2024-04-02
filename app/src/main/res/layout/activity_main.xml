@@ -16,18 +16,36 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="150dp"
+            android:layout_width="100dp"
             android:layout_height="128dp"
             android:layout_weight="1"
             android:contentDescription="@string/profile_pic"
-            app:srcCompat="@drawable/profile2" />
+            app:srcCompat="@drawable/profile2"
+            android:layout_margin="5dp"/>
 
-        <ProgressBar
-            android:id="@+id/progressBar3"
-            style="?android:attr/progressBarStyle"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="128dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar3"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_margin="0dp"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>
@@ -37,6 +55,7 @@
         android:layout_height="50dp"
         android:autofillHints="name"
         android:hint="@string/Name"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:layout_margin="10dp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
