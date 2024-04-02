@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Widgets</string>
     <string name="profile_image">profilepic</string>
+    <string name="Name">Name</string>
 </resources>
